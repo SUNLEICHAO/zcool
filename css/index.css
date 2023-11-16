@@ -1,7 +1,3 @@
-body {
-  height: 5000px;
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -20,16 +16,21 @@ a {
 
 /* 以上为通用样式 */
 .page-header {
+  background-color: #fff200;
+}
+
+.page-container {
   justify-content: space-between;
   display: flex;
-  margin: 0 30px;
+  min-width: 1200px;
   height: 56px;
+  margin: 0 30px;
 }
 
 .header-left {
+  flex-shrink: 0;
   align-items: center;
   display: flex;
-  background-color: #bfa;
 }
 
 .header-logo {
@@ -54,11 +55,21 @@ a {
   color: #222;
 }
 
+.header-nav-item:last-child {
+  padding: 0 20px;
+}
+
+.header-nav-item .iconfont {
+  display: inline-block;
+  width: 30px;
+  background-color: #ff4a3b;
+}
+
 .header-nav-item.reminder:after {
+  content: "";
   position: absolute;
   top: 0;
   right: 13px;
-  content: "";
   width: 8px;
   height: 8px;
   background-color: #ff4a3b;
@@ -75,20 +86,23 @@ a {
 
 .header-right {
   align-items: center;
+  justify-content: flex-end;
   display: flex;
+  width: 100%;
+  padding-left: 24px;
+  background-color: antiquewhite;
 }
 
 .header-search {
-  /* 问题，怎么让搜索框灵活变化 */
+  /* 问题，怎么让搜索框灵活变化,flex的应用 */
   align-items: center;
-  justify-content: space-between;
+  flex: 1;
   display: flex;
   min-width: 154px;
   max-width: 540px;
-  height: 36px;
+  height: 34px;
   margin-right: 20px;
-  box-sizing: border-box;
-  border: 1px solid rgb(224, 224, 224);
+  background-color: #fff;
   border-radius: 8px;
 }
 
@@ -97,7 +111,7 @@ a {
 }
 
 .header-search-input {
-  flex: 1;
+  width: 100%;
   height: 19px;
   padding: 0 12px;
   font-size: 14px;
@@ -134,6 +148,7 @@ a {
 .header-user {
   align-items: center;
   display: flex;
+  width: 226px;
   font-size: 14px;
   line-height: 19px;
   color: rgba(0, 0, 0, .65);
@@ -168,8 +183,8 @@ a {
 .banner-section {
   position: relative;
   z-index: 10;
-  margin-top: 20px;
   width: 100%;
+  margin-top: 20px;
   overflow: hidden;
 }
 
@@ -183,14 +198,14 @@ a {
 .banner-list {
   position: relative;
   left: -1485px;
+  display: flex;
   width: 1288px;
   margin: 0 auto;
-  display: flex;
 }
 
 .banner-item {
-  padding: 0 10px;
   display: flex;
+  padding: 0 10px;
 }
 
 .banner-item__img {
@@ -225,16 +240,15 @@ a {
 }
 
 .banner-dot-item:hover {
-  opacity: 1;
-  /* background-color: rgba(255, 255, 255, .8); */
   background-color: rgba(0, 0, 0, .65);
+  opacity: 1;
 }
 
 .banner-dot-item .iconfont {
   width: 20px;
   height: 20px;
-  background-color: #ff4a3b;
   font-size: 20px;
+  background-color: #ff4a3b;
 }
 
 .banner-dot-item:hover .iconfont {
@@ -273,29 +287,29 @@ a {
   border-radius: 12px;
 }
 
-.recommend-container {
-  background-color: #bfa;
+.content-section {
+  margin-bottom: 52px;
+}
+
+.content-container {
   position: relative;
-  display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
-
+  display: flex;
 }
 
-/* .recommend-topic{
-  display: flex;
+.content-title-list {
   justify-content: center;
-} */
-
-.recommend-title-list {
   display: flex;
-  /* width: 100%; */
+  width: 100%;
+  height: 56px;
   margin: 0 auto;
-  background-color: pink;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(237, 237, 237);
 }
 
-.recommend-title-item {
+.content-title-item {
   position: relative;
   width: 100px;
   height: 56px;
@@ -309,12 +323,12 @@ a {
   border-bottom: 2px solid transparent;
 }
 
-.recommend-title-item.query {
+.content-title-item.query {
   color: rgb(34, 34, 34);
   border-color: rgb(34, 34, 34);
 }
 
-.recommend-title-item.query::after {
+.content-title-item.query::after {
   content: "";
   position: absolute;
   right: 8px;
@@ -323,21 +337,18 @@ a {
   background-color: #000;
 }
 
-.recommend-ad-link {}
-
-.recommend-ad-link__img {
+.content-title-ad__img {
   position: absolute;
   top: -1px;
   right: 0;
   width: 210px;
 }
 
+
 .recommend-content-list {
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
-  padding-top: 31px;
-  border-top: 1px solid red;
 }
 
 .recommend-content-item {
@@ -346,28 +357,48 @@ a {
 }
 
 .recommend-content-item__cover {
+  position: relative;
   display: flex;
 }
 
 .recommend-content-item__cover-img {
   width: 329px;
+  /* height: 247px; */
   border-radius: 12px;
 }
 
+.recommend-content-item__cover .icon-xxx1 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.recommend-content-item__cover .icon-xxx2 {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  ;
+  border-radius: 50%;
+}
 
 .recommend-content-item__title {
   align-items: center;
   justify-content: space-between;
   display: flex;
+  max-width: 100%;
   margin-top: 8px;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
-  max-width: 100%;
-
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .recommend-content-item__title-view,
@@ -386,16 +417,16 @@ a {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-color: #000;
   margin-right: 4px;
+  background-color: #000;
 }
 
 .recommend-content-item__author,
 .hot-item__author {
   align-items: center;
   display: flex;
-  margin-top: 4px;
   height: 20px;
+  margin-top: 4px;
   font-size: 12px;
   color: rgb(85, 85, 85);
 }
@@ -405,12 +436,18 @@ a {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   margin-right: 8px;
+  border-radius: 50%;
+}
+
+.hot-item__author-img {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .inspiration-section {
   background-color: aliceblue;
+  margin-bottom: 36px;
 }
 
 .inspiration-topic,
@@ -423,6 +460,10 @@ a {
   font-weight: 500;
   line-height: 22px;
   color: rgb(34, 34, 34);
+}
+
+.interest .hot-topic {
+  padding: 30px 0 20px;
 }
 
 .inspiration-topic-more,
@@ -440,12 +481,14 @@ a {
   margin-left: 10px;
 }
 
-.inspiration-wrapper {
+.inspiration-wrapper,
+.hot-wrapper {
   overflow: hidden;
   border-right: 20px solid red;
 }
 
-.inspiration-list {
+.inspiration-list,
+.hot-list {
   display: flex;
   width: 2000px;
 }
@@ -460,18 +503,33 @@ a {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-.inspiration-item:first-child {
+.hot-item {
+  margin-left: 20px;
+}
+
+.interest .hot-item {
+  margin-left: 24px;
+}
+
+.inspiration-item:first-child,
+.hot-item:first-child {
   margin-left: 0;
 }
 
-.inspiration-item__cover {}
+
+.inspiration-item__cover {
+  display: flex;
+}
 
 .inspiration-item__cover-img,
 .hot-item__cover-img {
   width: 100%;
+  height: 180px;
+  border-radius: 12px;
 }
 
 .inspiration-item__title {
+  /* align-items: center; */
   justify-content: space-between;
   display: flex;
   margin-top: 8px;
@@ -482,8 +540,10 @@ a {
 }
 
 .inspiration-item__title-pic {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
+  /* height: 16px; */
+  line-height: 20px;
   font-size: 12px;
   margin-left: 10px;
 }
@@ -496,12 +556,43 @@ a {
   background-color: #000;
 }
 
+.hot-section {
+  background-color: rgb(245, 245, 245);
+  margin-bottom: 36px;
+}
+
+.hot-topic {
+  padding: 28px 0 19px;
+  /* line-height: 19px; */
+}
+
 .hot-item__cover {
+  position: relative;
   width: 240px;
+  display: flex;
 }
 
 .hot-item__cover-img {
   width: 100%;
+  height: 135px;
+}
+
+.interest .hot-item__cover-img {
+  height: 180px;
+
+}
+
+.hot-item__cover-livetime {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+  background: rgba(255, 71, 26, 0.9);
+  border-radius: 4px;
 }
 
 .hot-item__title {
@@ -515,17 +606,184 @@ a {
   color: rgb(34, 34, 34);
 }
 
+.interest .hot-item__title {
+  line-height: 21px;
+}
+
+.hot-item__title-view {
+  font-size: 14px;
+}
+
+.interest .hot-item__title-text {
+  font-size: 16px;
+}
+
+.interest .hot-item__title-view {
+  font-size: 12px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.content-pagination-container {
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.content-pagination-list {
+  display: flex;
+}
+
+.content-pagination-item {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 40px;
+  color: rgb(34, 34, 34);
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgb(245, 245, 245);
+}
+
+.content-pagination-item:first-child {
+  color: #fff;
+  background-color: rgb(34, 34, 34);
+}
+
+.content-pagination-item:hover {
+  background-color: #ccc;
+}
+
 .page-footer {
+  justify-content: space-between;
+  display: flex;
   height: 32px;
   padding: 0 30px;
+  box-sizing: border-box;
   font-size: 12px;
   border-top: 1px solid rgb(237, 237, 237);
   background-color: #999;
+  overflow: hidden;
 }
 
-.footer-link-list {
+.footer-link {
   align-items: center;
-  /* justify-content: center; */
   display: flex;
   height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(85, 85, 85);
+}
+
+.footer-about-list {
+  display: flex;
+}
+
+.footer-about-item {
+  margin-right: 24px;
+  align-items: center;
+  display: flex;
+}
+
+.footer-about-item .iconfont {
+  display: inline-block;
+  width: 16px;
+  height: 13px;
+  background-color: #000;
+  margin-left: 6px;
+}
+
+.footer-service-list {
+  display: flex;
+}
+
+.footer-service-item {
+  margin-right: 16px;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(85, 85, 85);
+}
+
+.footer-icon-list {
+  align-items: center;
+  display: flex;
+  width: 80px;
+  margin-left: 8px;
+}
+
+.footer-icon-item {
+  align-items: center;
+  display: flex;
+}
+
+.footer-icon-item .iconfont {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+}
+
+.footer-icon-item:nth-child(2) .iconfont {
+  margin: 0 16px;
+}
+
+.footer-copyright {
+  display: flex;
+}
+
+.footer-copyright>* {
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+  /* 问题，这里为什么设为了33的行高，但a的高度不是33，但却达到了居中的目的 */
+  line-height: 33px;
+}
+
+.footer-copyright .footer-copyright-beian {
+  margin-right: 12px;
+}
+
+.footer-copyright-beian:hover,
+.footer-copyright-zool:hover {
+  color: rgb(255, 115, 0);
+}
+
+
+/* 媒体查询 */
+@media screen and (max-width: 1399px) {
+  .header-logo {
+    margin-right: 32px;
+  }
+
+  .header-nav-item {
+    padding: 0 14px;
+  }
+
+  .header-nav-item:last-child {
+    padding: 0 14px;
+  }
+
+  .header-search {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1521px) {
+  .header-nav-item {
+    padding: 0 18px;
+  }
+
+  .header-nav-item:last-child {
+    padding: 0 18px;
+  }
+
+  .header-search {
+    margin-right: 24px;
+  }
+
 }

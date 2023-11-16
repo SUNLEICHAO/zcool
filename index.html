@@ -16,42 +16,45 @@
 <body>
   <!-- 首部 -->
   <header class="page-header">
-    <div class="header-left">
-      <div class="header-logo"></div>
-      <div class="header-navlist">
-        <a href="javascript:;" class="header-nav-item">首页</a>
-        <a href="javascript:;" class="header-nav-item reminder">发现</a>
-        <a href="javascript:;" class="header-nav-item reminder">机会</a>
-        <a href="javascript:;" class="header-nav-item">共创</a>
-        <a href="javascript:;" class="header-nav-item">活动</a>
-        <a href="javascript:;" class="header-nav-item">正版素材</a>
-        <a href="javascript:;" class="header-nav-item">
-          课程
-          <img src="./img/icon-ymgj.svg" alt="" class="header-nav-item__icon">
-        </a>
-        <a href="javascript:;" class="header-nav-item">
-          <span class="iconfont">···</span>
-        </a>
+    <div class="page-container">
+      <div class="header-left">
+        <div class="header-logo"></div>
+        <div class="header-navlist">
+          <a href="javascript:;" class="header-nav-item">首页</a>
+          <a href="javascript:;" class="header-nav-item reminder">发现</a>
+          <a href="javascript:;" class="header-nav-item reminder">机会</a>
+          <a href="javascript:;" class="header-nav-item">共创</a>
+          <a href="javascript:;" class="header-nav-item">活动</a>
+          <a href="javascript:;" class="header-nav-item">正版素材</a>
+          <a href="javascript:;" class="header-nav-item">
+            课程
+            <img src="./img/icon-ymgj.svg" alt="" class="header-nav-item__icon">
+          </a>
+          <a href="javascript:;" class="header-nav-item">
+            <span class="iconfont">···</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-search">
+          <input type="text" class="header-search-input" placeholder="设计师眼中的AIGC">
+          <span class="iconfont icon-camera"></span>
+          <a href="javascript:;" class="header-search-btn">
+            <span class="iconfont icon-search"></span>
+          </a>
+        </div>
+
+        <div class="header-user">
+          <a class="header-user-upload" href="javascript:;">
+            <span class="iconfont icon-xxx"></span>
+          </a>
+          <a class="header-user-signup" href="javascript:;">登录</a>
+          <a class="header-user-signin" href="javascript:;">注册</a>
+        </div>
+
       </div>
     </div>
-    <div class="header-right">
-      <div class="header-search">
-        <input type="text" class="header-search-input" placeholder="设计师眼中的AIGC">
-        <span class="iconfont icon-camera"></span>
-        <a href="javascript:;" class="header-search-btn">
-          <span class="iconfont icon-search"></span>
-        </a>
-      </div>
 
-      <div class="header-user">
-        <a class="header-user-upload" href="javascript:;">
-          <span class="iconfont icon-xxx"></span>
-        </a>
-        <a class="header-user-signup" href="javascript:;">登录</a>
-        <a class="header-user-signin" href="javascript:;">注册</a>
-      </div>
-
-    </div>
   </header>
   <!-- 主体 -->
   <div class="page-body">
@@ -104,25 +107,28 @@
         </div>
       </div>
     </div>
-
-    <div class="recommend-section">
-      <div class="recommend-container container-1411">
-        <div class="recommend-title-list">
-          <a href="javascript:;" class="recommend-title-item">关注</a>
-          <a href="javascript:;" class="recommend-title-item">推荐</a>
-          <a href="javascript:;" class="recommend-title-item query">首推</a>
-          <a href="javascript:;" class="recommend-title-item">榜单</a>
+    <div class="content-section">
+      <div class="content-container container-1411">
+        <!-- 头部，导航选择 -->
+        <div class="content-title">
+          <div class="content-title-list">
+            <a href="javascript:;" class="content-title-item">关注</a>
+            <a href="javascript:;" class="content-title-item">推荐</a>
+            <a href="javascript:;" class="content-title-item query">首推</a>
+            <a href="javascript:;" class="content-title-item">榜单</a>
+          </div>
+          <a href="javascript:;" class="content-title-ad">
+            <img src="./img/recommedn-link.webp" alt="" class="content-title-ad__img">
+          </a>
         </div>
-        <a href="javascript:;" class="recommend-ad-link">
-          <img src="./img/recommedn-link.webp" alt="" class="recommend-ad-link__img">
-        </a>
+        <!-- 内容模块2l -->
         <div class="recommend-content-list">
           <a href="javascript:;" class="recommend-content-item">
             <div class="recommend-content-item__cover">
               <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
             </div>
             <div class="recommend-content-item__title">
-              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
               <div class="recommend-content-item__title-view">
                 <span class="iconfont icon-xxx"></span>
                 180
@@ -137,6 +143,8 @@
           <a href="javascript:;" class="recommend-content-item">
             <div class="recommend-content-item__cover">
               <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+              <span class="iconfont icon-xxx1"></span>
+              <span class="iconfont icon-xxx2"></span>
             </div>
             <div class="recommend-content-item__title">
               <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
@@ -288,176 +296,1328 @@
             </div>
           </a>
         </div>
+
+        <!-- 灵感模块 -->
+        <div class="inspiration-section">
+          <div class="inspiration-container container-1411">
+            <div class="inspiration-topic">
+              <div class="inspiration-topic-title">点击灵感 · 发现创意</div>
+              <div class="inspiration-topic-more">
+                查看更多
+                <span class="iconfont icon-xxx"></span>
+              </div>
+            </div>
+            <div class="inspiration-wrapper">
+              <div class="inspiration-list">
+                <div class="inspiration-item">
+                  <div class="inspiration-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
+                  </div>
+                  <div class="inspiration-item__title">
+                    <div class="inspiration-item__title-text">双十一概念</div>
+                    <div class="inspiration-item__title-pic">
+                      <span class="iconfont icon-xxx"></span>
+                      92
+                    </div>
+                  </div>
+                </div>
+                <div class="inspiration-item">
+                  <div class="inspiration-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
+                  </div>
+                  <div class="inspiration-item__title">
+                    <div class="inspiration-item__title-text">双十一概念</div>
+                    <div class="inspiration-item__title-pic">
+                      <span class="iconfont icon-xxx"></span>
+                      92
+                    </div>
+                  </div>
+                </div>
+                <div class="inspiration-item">
+                  <div class="inspiration-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
+                  </div>
+                  <div class="inspiration-item__title">
+                    <div class="inspiration-item__title-text">双十一概念</div>
+                    <div class="inspiration-item__title-pic">
+                      <span class="iconfont icon-xxx"></span>
+                      92
+                    </div>
+                  </div>
+                </div>
+                <div class="inspiration-item">
+                  <div class="inspiration-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
+                  </div>
+                  <div class="inspiration-item__title">
+                    <div class="inspiration-item__title-text">双十一概念</div>
+                    <div class="inspiration-item__title-pic">
+                      <span class="iconfont icon-xxx"></span>
+                      92
+                    </div>
+                  </div>
+                </div>
+                <div class="inspiration-item">
+                  <div class="inspiration-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
+                  </div>
+                  <div class="inspiration-item__title">
+                    <div class="inspiration-item__title-text">双十一概念</div>
+                    <div class="inspiration-item__title-pic">
+                      <span class="iconfont icon-xxx"></span>
+                      92
+                    </div>
+                  </div>
+                </div>
+                <div class="inspiration-item">
+                  <div class="inspiration-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
+                  </div>
+                  <div class="inspiration-item__title">
+                    <div class="inspiration-item__title-text">双十一概念</div>
+                    <div class="inspiration-item__title-pic">
+                      <span class="iconfont icon-xxx"></span>
+                      92
+                    </div>
+                  </div>
+                </div>
+                <div class="inspiration-item">
+                  <div class="inspiration-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
+                  </div>
+                  <div class="inspiration-item__title">
+                    <div class="inspiration-item__title-text">双十一概念</div>
+                    <div class="inspiration-item__title-pic">
+                      <span class="iconfont icon-xxx"></span>
+                      92
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 内容模块3l -->
+        <div class="content-section">
+          <div class="content-container container-1411">
+            <div class="recommend-content-list">
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                  <span class="iconfont icon-xxx1"></span>
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 热卖 -->
+        <div class="hot-section">
+          <div class="hot-container container-1411">
+            <div class="hot-topic">
+              <div class="hot-topic-title">正在热销</div>
+              <div class="hot-topic-more">
+                查看更多
+                <span class="iconfont icon-xxx"></span>
+              </div>
+            </div>
+            <div class="hot-wrapper">
+              <div class="hot-list">
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/hot-1.webp" alt="" class="hot-item__cover-img">
+                    <span class="hot-item__cover-livetime">11月22日 20:30直播</span>
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">(限额优惠)C4D+AE产品动态表现</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      470
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user2.webp" alt="" class="hot-item__author-img">
+                    不二何
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/hot-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 内容模块3l -->
+        <div class="content-section">
+          <div class="content-container container-1411">
+            <div class="recommend-content-list">
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                  <span class="iconfont icon-xxx1"></span>
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+              <a href="javascript:;" class="recommend-content-item">
+                <div class="recommend-content-item__cover">
+                  <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+                </div>
+                <div class="recommend-content-item__title">
+                  <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                  <div class="recommend-content-item__title-view">
+                    <span class="iconfont icon-xxx"></span>
+                    180
+                  </div>
+                </div>
+                <div class="recommend-content-item__author">
+                  <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+                  篠仙
+                  <span class="iconfont icon-xxx2"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 兴趣 -->
+        <div class="hot-section interest">
+          <div class="hot-container container-1411">
+            <div class="hot-topic">
+              <div class="hot-topic-title">根据兴趣为你推荐</div>
+              <div class="hot-topic-more">
+                查看更多
+                <span class="iconfont icon-xxx"></span>
+              </div>
+            </div>
+            <div class="hot-wrapper">
+              <div class="hot-list">
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/interest-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Midjourney零基础设计角色一致性</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      444
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user2.webp" alt="" class="hot-item__author-img">
+                    不二何
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/hot-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+                <div class="hot-item">
+                  <div class="hot-item__cover">
+                    <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
+                  </div>
+                  <div class="hot-item__title">
+                    <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+                    <div class="hot-item__title-view">
+                      <span class="iconfont icon-xxx"></span>
+                      180
+                    </div>
+                  </div>
+                  <div class="hot-item__author">
+                    <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
+                    韩乔
+                    <span class="iconfont icon-xxx2"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 内容模块4l -->
+        <div class="recommend-content-list">
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+              <span class="iconfont icon-xxx1"></span>
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+          <a href="javascript:;" class="recommend-content-item">
+            <div class="recommend-content-item__cover">
+              <img src="./img/recommedn-1.webp" alt="" class="recommend-content-item__cover-img">
+            </div>
+            <div class="recommend-content-item__title">
+              <div class="recommend-content-item__title-text">Xiaomi 13 Pro 小米手机 产品站设计</div>
+              <div class="recommend-content-item__title-view">
+                <span class="iconfont icon-xxx"></span>
+                180
+              </div>
+            </div>
+            <div class="recommend-content-item__author">
+              <img src="./img/img-user.webp" alt="" class="recommend-content-item__author-img">
+              篠仙
+              <span class="iconfont icon-xxx2"></span>
+            </div>
+          </a>
+        </div>
+        <!-- 分页器 -->
+        <div class="content-pagination">
+          <div class="content-pagination-container container-1411">
+            <div class="content-pagination-list">
+              <div class="content-pagination-item">1</div>
+              <div class="content-pagination-item">2</div>
+              <div class="content-pagination-item">3</div>
+              <div class="content-pagination-item">4</div>
+              <div class="content-pagination-item">5</div>
+              <div class="content-pagination-item">6</div>
+              <div class="content-pagination-item">7</div>
+              <div class="content-pagination-item">…</div>
+              <div class="content-pagination-item">99</div>
+              <div class="content-pagination-item">100</div>
+              <div class="content-pagination-item"><</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
-    <div class="inspiration-section">
-      <div class="inspiration-container container-1411">
-        <div class="inspiration-topic">
-          <div class="inspiration-topic-title">点击灵感 · 发现创意</div>
-          <div class="inspiration-topic-more">
-            查看更多
+
+    <!-- 底部 -->
+    <footer class="page-footer">
+      <div class="footer-link">
+        <div class="footer-about-list">
+          <div class="footer-about-item">
+            语言
+            <span class="iconfont icon-xxx"></span>
+          </div>
+          <div class="footer-about-item">
+            资质
+            <span class="iconfont icon-xxx"></span>
+          </div>
+          <div class="footer-about-item">
+            举报中心
+            <span class="iconfont icon-xxx"></span>
+          </div>
+          <div class="footer-about-item">
+            关于我们
             <span class="iconfont icon-xxx"></span>
           </div>
         </div>
-        <div class="inspiration-wrapper">
-          <div class="inspiration-list">
-            <div class="inspiration-item">
-              <div class="inspiration-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
-              </div>
-              <div class="inspiration-item__title">
-                <div class="inspiration-item__title-text">双十一概念</div>
-                <div class="inspiration-item__title-pic">
-                  <span class="iconfont icon-xxx"></span>
-                  92
-                </div>
-              </div>
-            </div>
-            <div class="inspiration-item">
-              <div class="inspiration-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
-              </div>
-              <div class="inspiration-item__title">
-                <div class="inspiration-item__title-text">双十一概念</div>
-                <div class="inspiration-item__title-pic">
-                  <span class="iconfont icon-xxx"></span>
-                  92
-                </div>
-              </div>
-            </div>
-            <div class="inspiration-item">
-              <div class="inspiration-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
-              </div>
-              <div class="inspiration-item__title">
-                <div class="inspiration-item__title-text">双十一概念</div>
-                <div class="inspiration-item__title-pic">
-                  <span class="iconfont icon-xxx"></span>
-                  92
-                </div>
-              </div>
-            </div>
-            <div class="inspiration-item">
-              <div class="inspiration-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
-              </div>
-              <div class="inspiration-item__title">
-                <div class="inspiration-item__title-text">双十一概念</div>
-                <div class="inspiration-item__title-pic">
-                  <span class="iconfont icon-xxx"></span>
-                  92
-                </div>
-              </div>
-            </div>
-            <div class="inspiration-item">
-              <div class="inspiration-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
-              </div>
-              <div class="inspiration-item__title">
-                <div class="inspiration-item__title-text">双十一概念</div>
-                <div class="inspiration-item__title-pic">
-                  <span class="iconfont icon-xxx"></span>
-                  92
-                </div>
-              </div>
-            </div>
-            <div class="inspiration-item">
-              <div class="inspiration-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
-              </div>
-              <div class="inspiration-item__title">
-                <div class="inspiration-item__title-text">双十一概念</div>
-                <div class="inspiration-item__title-pic">
-                  <span class="iconfont icon-xxx"></span>
-                  92
-                </div>
-              </div>
-            </div>
-            <div class="inspiration-item">
-              <div class="inspiration-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="inspiration-item__cover-img">
-              </div>
-              <div class="inspiration-item__title">
-                <div class="inspiration-item__title-text">双十一概念</div>
-                <div class="inspiration-item__title-pic">
-                  <span class="iconfont icon-xxx"></span>
-                  92
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="footer-service-list">
+          <a href="javascript:;" class="footer-service-item">侵权申诉</a>
+          <a href="javascript:;" class="footer-service-item">企业服务</a>
+          <a href="javascript:;" class="footer-service-item">帮助中心</a>
         </div>
+        <div class="footer-icon-list">
+          <a href="javascript:;" class="footer-icon-item">
+            <span class="iconfont icon-xxx"></span>
+          </a>
+          <a href="javascript:;" class="footer-icon-item">
+            <span class="iconfont icon-xxx"></span>
+          </a>
+          <a href="javascript:;" class="footer-icon-item">
+            <span class="iconfont icon-xxx"></span>
+          </a>
+        </div>
+      </div>
 
+      <div class="footer-copyright">
+        <a href="javascript:;" class="footer-copyright-beian">京网文[2023]1747-060号</a>
+        <a href="javascript:;" class="footer-copyright-beian">京公网安备11010502000501号</a>
+        <a href="javascript:;" class="footer-copyright-beian">京ICP备11017824号-4</a>
+        <a href="javascript:;" class="footer-copyright-beian">京ICP证130164号</a>
+        <span class="footer-copyright-text">Copyright © 2006-2023&nbsp;</span>
+        <a href="javascript:;" class="footer-copyright-zool">ZCOOL站酷</a>
+        <span class="footer-copyright-text">Copyright © 2006-2023&nbsp;</span>
       </div>
-    </div>
-
-    <div class="hot-section">
-      <div class="hot-container container-1411">
-        <div class="hot-topic">
-          <div class="hot-topic-title">正在热销</div>
-            <div class="hot-topic-more">
-              查看更多
-              <span class="iconfont icon-xxx"></span>
-            </div>
-        </div>
-        <div class="hot-wrapper">
-          <div class="hot-list">
-            <div class="hot-item">
-              <div class="hot-item__cover">
-                <img src="./img/inspiration-1.webp" alt="" class="hot-item__cover-img">
-              </div>
-              <div class="hot-item__title">
-                <div class="hot-item__title-text text-ellipsis">Xiaomi 13 Pro 小米手机 产品站设计</div>
-                <div class="hot-item__title-view">
-                  <span class="iconfont icon-xxx"></span>
-                  180
-                </div>
-              </div>
-              <div class="hot-item__author">
-                <img src="./img/img-user.webp" alt="" class="hot-item__author-img">
-                韩乔
-                <span class="iconfont icon-xxx2"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- 底部 -->
-  <footer class="page-footer">
-    <div class="footer-link-list">
-      <div class="footer-link-item">
-        语言
-        <span class="iconfont icon-xxx"></span>
-      </div>
-      <div class="footer-link-item">
-        资质
-        <span class="iconfont icon-xxx"></span>
-      </div>
-      <div class="footer-link-item">
-        举报中心
-        <span class="iconfont icon-xxx"></span>
-      </div>
-      <div class="footer-link-item">
-        关于我们
-        <span class="iconfont icon-xxx"></span>
-      </div>
-      <a href="javascript:;" class="footer-link-item">侵权申诉</a>
-      <a href="javascript:;" class="footer-link-item">企业服务</a>
-      <a href="javascript:;" class="footer-link-item">帮助中心</a>
-      <a href="javascript:;" class="footer-link-item">
-        <span class="iconfont icon-xxx"></span>
-      </a>
-      <a href="javascript:;" class="footer-link-item">
-        <span class="iconfont icon-xxx"></span>
-      </a>
-      <a href="javascript:;" class="footer-link-item">
-        <span class="iconfont icon-xxx"></span>
-      </a>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
