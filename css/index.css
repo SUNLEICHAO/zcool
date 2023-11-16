@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -60,9 +64,11 @@ a {
 }
 
 .header-nav-item .iconfont {
-  display: inline-block;
+  align-items: center;
+  display: flex;
   width: 30px;
-  background-color: #ff4a3b;
+  height: 30px;
+  font-size: 30px;
 }
 
 .header-nav-item.reminder:after {
@@ -90,13 +96,12 @@ a {
   display: flex;
   width: 100%;
   padding-left: 24px;
-  background-color: antiquewhite;
 }
 
 .header-search {
-  /* 问题，怎么让搜索框灵活变化,flex的应用 */
-  align-items: center;
+  /* 问题，怎么让搜索框灵活变化:flex的应用 */
   flex: 1;
+  align-items: center;
   display: flex;
   min-width: 154px;
   max-width: 540px;
@@ -131,7 +136,11 @@ a {
   width: 20px;
   height: 20px;
   margin-right: 16px;
-  background-color: #000;
+}
+
+.header-search .icon-paizhao {
+  font-size: 20px;
+  color: rgb(255, 148, 0);
 }
 
 .header-search-btn {
@@ -162,14 +171,17 @@ a {
 }
 
 .header-user-upload .iconfont {
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 30px;
   height: 30px;
-  display: inline-block;
-  background-color: rgba(0, 0, 0, .65);
+  font-size: 25px;
 }
 
 .header-user-signup {
   margin-left: 20px;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .header-user-signin {
@@ -248,19 +260,19 @@ a {
   width: 20px;
   height: 20px;
   font-size: 20px;
-  background-color: #ff4a3b;
+  color: #fff;
 }
 
 .banner-dot-item:hover .iconfont {
-  background-color: rgb(255, 242, 0);
+  color: rgb(255, 242, 0);
 }
 
 .banner-dotlist .banner-dot-item.prev {
-  left: 20px;
+  left: -55px;
 }
 
 .banner-dotlist .banner-dot-item.next {
-  right: 20px;
+  right: -55px;
 }
 
 .board-section {
@@ -268,13 +280,14 @@ a {
 }
 
 .board-list {
-  display: flex;
   justify-content: center;
+  display: flex;
 }
 
 .board-item {
   display: flex;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .board-item:last-child {
@@ -289,13 +302,16 @@ a {
 
 .content-section {
   margin-bottom: 52px;
-}
-
-.content-container {
   position: relative;
   flex-direction: column;
   justify-content: center;
   display: flex;
+}
+
+.content-title {
+  position: relative;
+  margin: 0 auto;
+  width: 1743px;
 }
 
 .content-title-list {
@@ -323,74 +339,99 @@ a {
   border-bottom: 2px solid transparent;
 }
 
+.content-title-item:hover {
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+
 .content-title-item.query {
   color: rgb(34, 34, 34);
   border-color: rgb(34, 34, 34);
 }
 
-.content-title-item.query::after {
-  content: "";
+.content-title-item.query .iconfont {
   position: absolute;
   right: 8px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
   width: 20px;
   height: 20px;
-  background-color: #000;
+  color: rgb(186, 186, 186);
 }
 
-.content-title-ad__img {
+.content-title-ad{
   position: absolute;
   top: -1px;
-  right: 0;
+  right: 0px;
+}
+.content-title-ad__img {
   width: 210px;
 }
 
-
-.recommend-content-list {
+.content-recommendlist {
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
+  width: 1743px;
+  margin: 0 auto;
 }
 
-.recommend-content-item {
+.content-recommend-item {
   margin-bottom: 36px;
-  background-color: pink;
+  width: 329px;
 }
 
-.recommend-content-item__cover {
+.content-recommend-item__cover {
   position: relative;
   display: flex;
 }
 
-.recommend-content-item__cover-img {
+.content-recommend-item__cover:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.content-recommend-item__cover:hover:after {
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.content-recommend-item__cover-img {
   width: 329px;
-  /* height: 247px; */
   border-radius: 12px;
 }
 
-.recommend-content-item__cover .icon-xxx1 {
+.content-recommend-item__cover .iconfont {
   position: absolute;
-  top: 12px;
+  z-index: 10;
   right: 12px;
-  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  border-radius: 50%;
+}
+
+.content-recommend-item__cover .icon-bofang {
+  top: 12px;
   width: 20px;
   height: 20px;
-  background-color: #000;
-  border-radius: 50%;
+  color: #333;
+  background-color: #eee;
 }
 
-.recommend-content-item__cover .icon-xxx2 {
-  position: absolute;
+.content-recommend-item__cover .icon-remenx {
   bottom: 12px;
-  right: 12px;
-  display: inline-block;
   width: 24px;
   height: 24px;
+  color: rgb(255, 71, 26);
   background-color: rgba(255, 255, 255, 0.8);
-  ;
-  border-radius: 50%;
 }
 
-.recommend-content-item__title {
+.content-recommend-item__title {
   align-items: center;
   justify-content: space-between;
   display: flex;
@@ -401,7 +442,15 @@ a {
   line-height: 21px;
 }
 
-.recommend-content-item__title-view,
+.content-recommend-item__title-text {
+  max-width: 100%;
+}
+
+.content-recommend-item__title-text:hover {
+  color: rgb(255, 115, 0);
+}
+
+.content-recommend-item__title-view,
 .hot-item__title-view {
   display: flex;
   height: 16px;
@@ -412,16 +461,15 @@ a {
   color: rgb(85, 85, 85);
 }
 
-.recommend-content-item__title-view .iconfont,
+.content-recommend-item__title-view .iconfont,
 .hot-item__title-view .iconfont {
   display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 4px;
-  background-color: #000;
 }
 
-.recommend-content-item__author,
+.content-recommend-item__author,
 .hot-item__author {
   align-items: center;
   display: flex;
@@ -431,7 +479,12 @@ a {
   color: rgb(85, 85, 85);
 }
 
-.recommend-content-item__author-img,
+.content-recommend-item__author:hover,
+.hot-item__author:hover {
+  color: rgb(255, 115, 0);
+}
+
+.content-recommend-item__author-img,
 .hot-item__author-img {
   display: inline-block;
   width: 20px;
@@ -445,9 +498,16 @@ a {
   border: 1px solid rgb(255, 255, 255);
 }
 
-.inspiration-section {
-  background-color: aliceblue;
+.content-inspiration {
+  background-color: rgb(245, 245, 245);
   margin-bottom: 36px;
+}
+
+.inspiration-container,
+.hot-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1743px;
 }
 
 .inspiration-topic,
@@ -462,7 +522,7 @@ a {
   color: rgb(34, 34, 34);
 }
 
-.interest .hot-topic {
+.content-interest .hot-topic {
   padding: 30px 0 20px;
 }
 
@@ -470,44 +530,79 @@ a {
 .hot-topic-more {
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 
 .inspiration-topic-more .iconfont,
 .hot-topic-more .iconfont {
-  display: inline-block;
+  align-items: center;
+  display: flex;
   width: 12px;
   height: 12px;
-  background-color: #000;
   margin-left: 10px;
+  transform: scale(.6);
+}
+
+.inspiration-topic-more:hover,
+.hot-topic-more:hover {
+  color: rgb(255, 115, 0);
 }
 
 .inspiration-wrapper,
 .hot-wrapper {
+  position: relative;
   overflow: hidden;
-  border-right: 20px solid red;
+}
+
+.hot-wrapper>.iconfont,
+.inspiration-wrapper>.iconfont {
+  position: absolute;
+  top: 61px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  color: rgb(136, 136, 136);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.inspiration-wrapper .iconfont:hover {
+  color: rgb(34, 34, 34);
 }
 
 .inspiration-list,
 .hot-list {
+  position: relative;
   display: flex;
   width: 2000px;
 }
 
 .inspiration-item,
 .hot-item {
+  position: relative;
   width: 240px;
   margin: 0 0 30px 24px;
 }
 
-.inspiration-item:nth-child(7) {
-  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+.inspiration-item:last-child::after,
+.hot-item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 1) 75%);
 }
 
 .hot-item {
   margin-left: 20px;
 }
 
-.interest .hot-item {
+.content-interest .hot-item {
   margin-left: 24px;
 }
 
@@ -515,7 +610,6 @@ a {
 .hot-item:first-child {
   margin-left: 0;
 }
-
 
 .inspiration-item__cover {
   display: flex;
@@ -529,7 +623,6 @@ a {
 }
 
 .inspiration-item__title {
-  /* align-items: center; */
   justify-content: space-between;
   display: flex;
   margin-top: 8px;
@@ -539,31 +632,31 @@ a {
   color: rgb(34, 34, 34);
 }
 
+.inspiration-item__title-text:hover {
+  color: rgb(255, 115, 0);
+}
+
 .inspiration-item__title-pic {
-  /* align-items: center; */
   display: flex;
-  /* height: 16px; */
   line-height: 20px;
   font-size: 12px;
   margin-left: 10px;
 }
 
-.inspiration-item__title-pic .iconfont {
+.inspiration-item__title-pic .iconfont.icon-xiangce {
   display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 4px;
-  background-color: #000;
 }
 
-.hot-section {
+.content-hot {
   background-color: rgb(245, 245, 245);
   margin-bottom: 36px;
 }
 
 .hot-topic {
   padding: 28px 0 19px;
-  /* line-height: 19px; */
 }
 
 .hot-item__cover {
@@ -577,9 +670,8 @@ a {
   height: 135px;
 }
 
-.interest .hot-item__cover-img {
+.content-interest .hot-item__cover-img {
   height: 180px;
-
 }
 
 .hot-item__cover-livetime {
@@ -606,7 +698,7 @@ a {
   color: rgb(34, 34, 34);
 }
 
-.interest .hot-item__title {
+.content-interest .hot-item__title {
   line-height: 21px;
 }
 
@@ -614,11 +706,11 @@ a {
   font-size: 14px;
 }
 
-.interest .hot-item__title-text {
+.content-interest .hot-item__title-text {
   font-size: 16px;
 }
 
-.interest .hot-item__title-view {
+.content-interest .hot-item__title-view {
   font-size: 12px;
 }
 
@@ -628,15 +720,12 @@ a {
   background-color: red;
 }
 
-.content-pagination-container {
+.content-pagination-list {
+  /* display: flex; */
   justify-content: center;
   display: flex;
   height: 40px;
   margin-top: 10px;
-}
-
-.content-pagination-list {
-  display: flex;
 }
 
 .content-pagination-item {
@@ -644,11 +733,12 @@ a {
   height: 40px;
   margin-left: 8px;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 38px;
   color: rgb(34, 34, 34);
   text-align: center;
   border-radius: 8px;
   background-color: rgb(245, 245, 245);
+  cursor: pointer;
 }
 
 .content-pagination-item:first-child {
@@ -656,8 +746,17 @@ a {
   background-color: rgb(34, 34, 34);
 }
 
+.content-pagination-item:last-child {
+  margin-right: 8px;
+  margin-left: 6px;
+}
+
 .content-pagination-item:hover {
   background-color: #ccc;
+}
+
+.content-pagination-item .iconfont {
+  font-size: 12px;
 }
 
 .page-footer {
@@ -668,7 +767,6 @@ a {
   box-sizing: border-box;
   font-size: 12px;
   border-top: 1px solid rgb(237, 237, 237);
-  background-color: #999;
   overflow: hidden;
 }
 
@@ -686,17 +784,19 @@ a {
 }
 
 .footer-about-item {
-  margin-right: 24px;
   align-items: center;
   display: flex;
+  margin-right: 24px;
 }
 
 .footer-about-item .iconfont {
-  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
   width: 16px;
   height: 13px;
-  background-color: #000;
   margin-left: 6px;
+  transform: rotate(90deg) scale(.7);
 }
 
 .footer-service-list {
@@ -708,6 +808,10 @@ a {
   font-size: 12px;
   line-height: 20px;
   color: rgb(85, 85, 85);
+}
+
+.footer-service-item:hover {
+  color: rgb(255, 115, 0);
 }
 
 .footer-icon-list {
@@ -726,7 +830,15 @@ a {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-color: #000;
+  font-size: 13px;
+}
+
+.footer-icon-item .iconfont:hover {
+  color: rgb(255, 115, 0);
+}
+
+.footer-icon-item:nth-child(1) .iconfont:hover {
+  color: rgb(40, 196, 69);
 }
 
 .footer-icon-item:nth-child(2) .iconfont {
@@ -740,7 +852,7 @@ a {
 .footer-copyright>* {
   font-size: 12px;
   color: rgb(85, 85, 85);
-  /* 问题，这里为什么设为了33的行高，但a的高度不是33，但却达到了居中的目的 */
+  /* 问题，这里为什么设为了33的行高，但a的高度不是33，但却可以居中 */
   line-height: 33px;
 }
 

@@ -1,0 +1,121 @@
+{
+  "id": "4333481",
+  "name": "zcool",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1360",
+      "name": "新浪微博",
+      "font_class": "xinlangweibo",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1110423",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "10918215",
+      "name": "zcool-fill",
+      "font_class": "zcool-fill",
+      "unicode": "e779",
+      "unicode_decimal": 59257
+    },
+    {
+      "icon_id": "1252",
+      "name": "帮助",
+      "font_class": "bangzhu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "831601",
+      "name": "arrow",
+      "font_class": "arrow",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "2674474",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "4191223",
+      "name": "热门@2x",
+      "font_class": "remenx",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11372780",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e8c7",
+      "unicode_decimal": 59591
+    },
+    {
+      "icon_id": "16619405",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    },
+    {
+      "icon_id": "38119066",
+      "name": "arrow-copy",
+      "font_class": "arrow2-copy",
+      "unicode": "eca7",
+      "unicode_decimal": 60583
+    },
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1198237",
+      "name": "拍照",
+      "font_class": "paizhao",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "5127392",
+      "name": "like",
+      "font_class": "like",
+      "unicode": "e7b9",
+      "unicode_decimal": 59321
+    },
+    {
+      "icon_id": "9974429",
+      "name": "省略号",
+      "font_class": "shenglvehao",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "12974853",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "22978039",
+      "name": "相册",
+      "font_class": "xiangce",
+      "unicode": "e89f",
+      "unicode_decimal": 59551
+    }
+  ]
+}
