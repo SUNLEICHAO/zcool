@@ -17,15 +17,25 @@
 <body>
   <!-- 首部 -->
   <header class="page-header">
-    <div class="page-container">
+    <div class="header-container">
       <div class="header-left">
         <div class="header-logo">
-          <img src="./img/logo.png" alt="">
+          <img src="./img/logo.png" alt="" class="header-logo-img">
         </div>
         <div class="header-navlist">
           <a href="javascript:;" class="header-nav-item">首页</a>
-          <a href="javascript:;" class="header-nav-item reminder">发现</a>
-          <a href="javascript:;" class="header-nav-item reminder">机会</a>
+          <a href="javascript:;" class="header-nav-item">
+            <span class="header-nav-item__text">
+              发现
+              <span class="iconfont red-pot"></span>
+            </span>
+          </a>
+          <a href="javascript:;" class="header-nav-item">
+            <span class="header-nav-item__text">
+              机会
+              <span class="iconfont red-pot"></span>
+            </span>
+          </a>
           <a href="javascript:;" class="header-nav-item">共创</a>
           <a href="javascript:;" class="header-nav-item">活动</a>
           <a href="javascript:;" class="header-nav-item">正版素材</a>
@@ -61,10 +71,12 @@
   </header>
   <!-- 主体 -->
   <div class="page-body">
+
     <!-- banner -->
     <div class="banner-section">
       <div class="banner-container">
         <div class="banner-list">
+          <div class="banner-item"></div>
           <a href="javascript:;" class="banner-item">
             <img src="./img/banner-1.webp" alt="" class="banner-item__img">
           </a>
@@ -85,9 +97,9 @@
           </div>
         </div>
       </div>
-
     </div>
-    <!-- 展板 -->
+
+    <!-- 宣传展板 -->
     <div class="board-section">
       <div class="board-list">
         <div class="board-item">
@@ -110,26 +122,31 @@
         </div>
       </div>
     </div>
+
     <!-- 主要内容部分 -->
     <div class="content-section">
+
       <!-- 头部，导航选择 -->
       <div class="content-title">
-        <div class="content-title-list">
-          <a href="javascript:;" class="content-title-item">关注</a>
-          <a href="javascript:;" class="content-title-item">推荐</a>
-          <a href="javascript:;" class="content-title-item query">
-            首推
-            <span class="iconfont icon-bangzhu"></span>
-          </a>
-          <a href="javascript:;" class="content-title-item">榜单</a>
+        <div class="content-container container-m1200">
+          <div class="content-title-list">
+            <a href="javascript:;" class="content-title-item">关注</a>
+            <a href="javascript:;" class="content-title-item">推荐</a>
+            <a href="javascript:;" class="content-title-item query">
+              首推
+              <span class="iconfont icon-bangzhu"></span>
+            </a>
+            <a href="javascript:;" class="content-title-item">榜单</a>
+            <a href="javascript:;" class="content-title-ad">
+              <img src="./img/recommedn-link.webp" alt="" class="content-title-ad__img">
+            </a>
+          </div>
+
         </div>
-        <a href="javascript:;" class="content-title-ad">
-          <img src="./img/recommedn-link2.webp" alt="" class="content-title-ad__img">
-        </a>
       </div>
 
       <!-- 内容模块(2l) -->
-      <div class="content-recommendlist">
+      <div class="content-recommendlist line-2 container-m1200">
         <a href="javascript:;" class="content-recommend-item">
           <div class="content-recommend-item__cover">
             <img src="./img/recommend-1.webp" alt="" class="content-recommend-item__cover-img">
@@ -319,7 +336,7 @@
 
       <!-- 灵感模块 -->
       <div class="content-inspiration">
-        <div class="inspiration-container">
+        <div class="inspiration-container container-m1200">
           <div class="inspiration-topic">
             <div class="inspiration-topic-title">点击灵感 · 发现创意</div>
             <div class="inspiration-topic-more">
@@ -420,7 +437,7 @@
       </div>
 
       <!-- 内容模块(3l) -->
-      <div class="content-recommendlist">
+      <div class="content-recommendlist line-3 container-m1200">
         <a href="javascript:;" class="content-recommend-item">
           <div class="content-recommend-item__cover">
             <img src="./img/recommend-1.webp" alt="" class="content-recommend-item__cover-img">
@@ -703,7 +720,7 @@
 
       <!-- 热卖 -->
       <div class="content-hot">
-        <div class="hot-container">
+        <div class="hot-container container-m1200">
           <div class="hot-topic">
             <div class="hot-topic-title">正在热销</div>
             <div class="hot-topic-more">
@@ -840,7 +857,7 @@
       </div>
 
       <!-- 内容模块(3l) -->
-      <div class="content-recommendlist">
+      <div class="content-recommendlist line-3 container-m1200">
         <a href="javascript:;" class="content-recommend-item">
           <div class="content-recommend-item__cover">
             <img src="./img/recommend-1.webp" alt="" class="content-recommend-item__cover-img">
@@ -1123,7 +1140,7 @@
 
       <!-- 兴趣 -->
       <div class="content-interest content-hot">
-        <div class="hot-container">
+        <div class="hot-container container-m1200">
           <div class="hot-topic">
             <div class="hot-topic-title">根据兴趣为你推荐</div>
             <div class="hot-topic-more">
@@ -1259,7 +1276,7 @@
       </div>
 
       <!-- 内容模块(4l) -->
-      <div class="content-recommendlist">
+      <div class="content-recommendlist line-4 container-m1200">
         <a href="javascript:;" class="content-recommend-item">
           <div class="content-recommend-item__cover">
             <img src="./img/recommend-1.webp" alt="" class="content-recommend-item__cover-img">
@@ -1634,7 +1651,7 @@
 
       <!-- 分页器 -->
       <div class="content-pagination">
-        <div class="content-pagination-list">
+        <div class="content-pagination-list container-m1200">
           <div class="content-pagination-item">1</div>
           <div class="content-pagination-item">2</div>
           <div class="content-pagination-item">3</div>
